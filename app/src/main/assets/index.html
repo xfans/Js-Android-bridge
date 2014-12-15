@@ -1,0 +1,41 @@
+<html>
+<head>
+    <script type="text/javascript" charset="utf-8" src="jsapi.js"></script>
+<script type="text/javascript">
+    function show(str){
+        var doc = document.getElementById("cont");
+        doc.innerHTML = str;
+    }
+    function showPic(path){
+        var doc = document.getElementById("cont");
+        doc.innerHTML = str;
+    }
+    function callbackSync(){
+        var result = JsApi.callAndroidSync("alert", "hello");
+        show('hello:'+result);
+    }
+    function callbackAsync(){
+        var success = function( result) {
+            str = "<img id='img' src='"+result+"'>";
+            showPic(str);
+        };
+        var fail = function( result) {
+            show('fail:'+result);
+        };
+        JsApi.callAndroidAsync("CAMERA", "hello", success, fail);
+    }
+</script>
+</head>
+<body>
+<div id="cont">test</div>
+<input type="button" onclick="callbackSync()"
+       value="callbackSync" />
+<input type="button" onclick="callbackAsync()"
+       value="callbackAsync" />
+
+<img id="img" src="pic.jpg">
+<a href="tel:10010">tel:10010</a><br>
+<a href="gonative:com.example.xfans.js.sample.TestActivity">gonative</a><br>
+
+</body>
+</html>

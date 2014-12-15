@@ -27,7 +27,7 @@ public class AndroidJsBridge {
         this.androidApi = androidApi;
     }
 
-    public void callback( String cmd, String agrs, String key){
+    public void callNative( String cmd, String agrs, String key){
         Log.d("Api", cmd + ":" + agrs + ":" + key);
         RequestContent requestContent = new RequestContent(cmd, agrs, key, webView);
         ContextQueue.reqMap.put(key,requestContent);

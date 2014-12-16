@@ -33,8 +33,6 @@ public class MainActivity extends XfansBaseActivity {
             }
         });
         webView.loadUrl("file:///android_asset/index.html");
-
-        Log.d("XfanWebChromeClient", "------------");
     }
 
     @Override
@@ -55,7 +53,6 @@ public class MainActivity extends XfansBaseActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }

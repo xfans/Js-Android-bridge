@@ -33,7 +33,6 @@ public class XfansBaseActivity extends Activity implements XfansActivityInterfac
         androidJsBridge = new AndroidJsBridge(webView,androidApi);
         XfansWebChromeClientBridge xfansWebChromeClientBridge = new XfansWebChromeClientBridge(androidApi);
         XfansWebViewClientBridge xfansWebViewClientBridge = new XfansWebViewClientBridge(androidApi);
-//        webView.initJsAndroid(androidJsBridge, xfansWebChromeClientBridge)
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webView.addJavascriptInterface(androidJsBridge, "AndroidJsBridge");
@@ -64,7 +63,7 @@ public class XfansBaseActivity extends Activity implements XfansActivityInterfac
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         Log.d("XfansBaseActivity","onActivityResult");
         if (resultCode != 0){

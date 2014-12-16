@@ -21,7 +21,6 @@ public class XfansWebViewClientBridge extends WebViewClient{
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
         Log.d("XfansWebViewClientBridge","shouldOverrideUrlLoading:"+url);
         if(url == null){return false; }
-        androidApi.callUrl(view,url);
-        return true;
+        return androidApi.callUrl(view,url);
     }
 }

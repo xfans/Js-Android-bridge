@@ -104,6 +104,7 @@ js 调用android native方法。
 
 mail:zhuleiv5#outlook.com
 
+[JavaScript与android native相互调用](http://xfans.us/archives/197 "JavaScript与android native相互调用")
 
 
 Js-Android bridge

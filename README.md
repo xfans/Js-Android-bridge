@@ -12,6 +12,8 @@ js 调用android native方法。
 
 参考了部分开源项目，Cordova等。
 
+该项目使用Gradle构建。
+
 ------------------
 
 ##js调用native方式：
@@ -86,15 +88,15 @@ js 调用android native方法。
 -------------
 ##使用该项目：
 
-修改`AndroidApi.java`,`CMD.java`即可。
+  修改`AndroidApi.java`,`CMD.java`即可。
   
 
 -------------
 ##注意
 
-未处理webview的安全问题。
+  未处理webview的安全问题。
 
-[WebView中接口隐患与手机挂马利用](http://drops.wooyun.org/papers/548 "WebView中接口隐患与手机挂马利用")
+  [WebView中接口隐患与手机挂马利用](http://drops.wooyun.org/papers/548 "WebView中接口隐患与手机挂马利用")
 
 -------------
 

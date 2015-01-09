@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 15
+    compileSdkVersion 19
     buildToolsVersion "21.1.1"
 
     defaultConfig {
         applicationId "com.example.xfans.js"
-        minSdkVersion 15
+        minSdkVersion 19
         targetSdkVersion 15
         versionCode 1
         versionName "1.0"

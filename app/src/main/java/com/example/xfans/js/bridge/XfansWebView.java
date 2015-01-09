@@ -88,4 +88,16 @@ public class XfansWebView extends WebView {
             }
         }
     }
+    /**
+     * 4.4新方法
+     * @param jsStr
+     */
+    public void evaJsForKitkat(String jsStr) {
+        evaluateJavascript(jsStr,new ValueCallback<String>() {
+            @Override
+            public void onReceiveValue(String s) {
+                Log.d("AndroidJsBridge", "onReceiveValue:" + s);
+            }
+        });
+    }
 }

@@ -72,9 +72,11 @@ public class AndroidJsBridge {
     private void loadUrlForVersion(String jsStr) {//android 3.2 以上的使用反射方式加载js
         //fix bugs: 1. loadUrl may hide keyboard when your focus in a input. 2. loadUrl cannot be called too often.
         if (Build.VERSION.SDK_INT<Build.VERSION_CODES.HONEYCOMB_MR2) {
-            webView.loadUrl(jsStr);
-        } else {
-            webView.loadUrlReflection(jsStr);
+            webView.loadUrl("javascript: JsApi.jsCallback"+jsStr);
+        } else if(Build.VERSION.SDK_INT<Build.VERSION_CODES.KITKAT){
+            webView.loadUrlReflection("javascript: JsApi.jsCallback"+jsStr);
+        }else{//4.4兼用
+            webView.evaJsForKitkat("JsApi.jsCallback"+jsStr);
         }
     }
 

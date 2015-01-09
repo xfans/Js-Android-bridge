@@ -1,5 +1,8 @@
 Js-Android-bridge
 =================
+更新日志：
+2015/01/09:修改XfansWebView.java,AndroidJsBridge.java兼容4.4.
+
 js 调用android native方法。
 
 如：

@@ -1,9 +1,9 @@
-package com.example.xfans.js.sample;
+package com.example.xfans.jsbridge.sample;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.example.xfans.js.R;
+import com.example.xfans.jsbridge.R;
 
 /**
  * Created by xfans on 2014/12/13.

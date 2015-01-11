@@ -1,4 +1,4 @@
-package com.example.xfans.js.api;
+package com.example.xfans.jsbridge.api;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -14,9 +14,9 @@ import android.webkit.JsPromptResult;
 import android.webkit.JsResult;
 import android.webkit.WebView;
 
-import com.example.xfans.js.bridge.AndroidJsBridge;
-import com.example.xfans.js.bridge.RequestContent;
-import com.example.xfans.js.bridge.Utils;
+import com.example.xfans.jsbridge.bridge.AndroidJsBridge;
+import com.example.xfans.jsbridge.bridge.RequestContent;
+import com.example.xfans.jsbridge.bridge.Utils;
 
 import java.io.File;
 

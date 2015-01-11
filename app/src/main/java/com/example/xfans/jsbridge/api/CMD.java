@@ -1,4 +1,4 @@
-package com.example.xfans.js.api;
+package com.example.xfans.jsbridge.api;
 
 /**
  * Created by xfans on 2014/12/13.

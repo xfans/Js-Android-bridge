@@ -1,4 +1,4 @@
-package com.example.xfans.js.bridge;
+package com.example.xfans.jsbridge.bridge;
 
 import android.webkit.WebView;
 

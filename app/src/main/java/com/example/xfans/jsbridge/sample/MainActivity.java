@@ -1,17 +1,15 @@
-package com.example.xfans.js.sample;
+package com.example.xfans.jsbridge.sample;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.Button;
 
-import com.example.xfans.js.R;
-import com.example.xfans.js.bridge.XfansWebView;
-import com.example.xfans.js.widget.XfansBaseActivity;
+import com.example.xfans.jsbridge.R;
+import com.example.xfans.jsbridge.bridge.XfansWebView;
+import com.example.xfans.jsbridge.widget.XfansBaseActivity;
 
 
 public class MainActivity extends XfansBaseActivity {

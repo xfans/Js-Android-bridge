@@ -1,14 +1,11 @@
-package com.example.xfans.js.bridge;
+package com.example.xfans.jsbridge.bridge;
 
 import android.app.Activity;
 import android.os.Build;
 import android.util.Log;
 import android.webkit.WebView;
 
-import com.example.xfans.js.api.AndroidApi;
-
-import java.util.ArrayDeque;
-import java.util.Queue;
+import com.example.xfans.jsbridge.api.AndroidApi;
 
 /**
  * Created by xfans on 2014/12/12.

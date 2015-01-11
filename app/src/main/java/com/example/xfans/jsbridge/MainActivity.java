@@ -1,4 +1,4 @@
-package com.example.xfans.js;
+package com.example.xfans.jsbridge;
 
 import android.app.Activity;
 import android.os.Bundle;

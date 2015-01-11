@@ -1,10 +1,7 @@
-package com.example.xfans.js.bridge;
+package com.example.xfans.jsbridge.bridge;
 
-import java.security.spec.PSSParameterSpec;
-import java.util.ArrayDeque;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Queue;
 
 /**
  * Created by xfans on 2014/12/12.

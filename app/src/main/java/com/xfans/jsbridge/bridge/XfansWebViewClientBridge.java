@@ -1,10 +1,10 @@
-package com.example.xfans.jsbridge.bridge;
+package com.xfans.jsbridge.bridge;
 
 import android.util.Log;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.example.xfans.jsbridge.api.AndroidApi;
+import com.xfans.jsbridge.api.AndroidApi;
 
 /**
  * Created by xfans on 2014/12/13.

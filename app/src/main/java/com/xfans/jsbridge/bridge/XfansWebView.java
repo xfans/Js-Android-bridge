@@ -1,5 +1,6 @@
-package com.example.xfans.jsbridge.bridge;
+package com.xfans.jsbridge.bridge;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
@@ -104,7 +105,7 @@ public class XfansWebView extends WebView {
      * 4.4新方法
      * @param jsStr
      */
-    @TargetApi(Build.VERSION_CODES.KITKAT)
+    @SuppressLint("NewApi")
     public void evaJsForKitkat(String jsStr) {
         evaluateJavascript(jsStr,new ValueCallback<String>() {
             @Override

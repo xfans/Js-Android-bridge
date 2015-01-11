@@ -1,4 +1,4 @@
-package com.example.xfans.jsbridge.bridge;
+package com.xfans.jsbridge.bridge;
 
 import android.content.Intent;
 

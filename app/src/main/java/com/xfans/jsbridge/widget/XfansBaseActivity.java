@@ -1,4 +1,4 @@
-package com.example.xfans.jsbridge.widget;
+package com.xfans.jsbridge.widget;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,16 +7,16 @@ import android.os.Bundle;
 import android.util.Log;
 import android.webkit.WebSettings;
 
-import com.example.xfans.jsbridge.api.AndroidApi;
-import com.example.xfans.jsbridge.api.CMD;
-import com.example.xfans.jsbridge.bridge.AndroidJsBridge;
-import com.example.xfans.jsbridge.bridge.ContextQueue;
-import com.example.xfans.jsbridge.bridge.RequestContent;
-import com.example.xfans.jsbridge.bridge.Utils;
-import com.example.xfans.jsbridge.bridge.XfansActivityInterface;
-import com.example.xfans.jsbridge.bridge.XfansWebChromeClientBridge;
-import com.example.xfans.jsbridge.bridge.XfansWebView;
-import com.example.xfans.jsbridge.bridge.XfansWebViewClientBridge;
+import com.xfans.jsbridge.api.AndroidApi;
+import com.xfans.jsbridge.api.CMD;
+import com.xfans.jsbridge.bridge.AndroidJsBridge;
+import com.xfans.jsbridge.bridge.ContextQueue;
+import com.xfans.jsbridge.bridge.RequestContent;
+import com.xfans.jsbridge.bridge.Utils;
+import com.xfans.jsbridge.bridge.XfansActivityInterface;
+import com.xfans.jsbridge.bridge.XfansWebChromeClientBridge;
+import com.xfans.jsbridge.bridge.XfansWebView;
+import com.xfans.jsbridge.bridge.XfansWebViewClientBridge;
 
 /**
  * Created by xfans on 2014/12/12.

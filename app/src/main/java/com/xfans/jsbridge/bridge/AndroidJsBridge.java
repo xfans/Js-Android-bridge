@@ -1,11 +1,11 @@
-package com.example.xfans.jsbridge.bridge;
+package com.xfans.jsbridge.bridge;
 
 import android.app.Activity;
 import android.os.Build;
 import android.util.Log;
 import android.webkit.WebView;
 
-import com.example.xfans.jsbridge.api.AndroidApi;
+import com.xfans.jsbridge.api.AndroidApi;
 
 /**
  * Created by xfans on 2014/12/12.
@@ -37,10 +37,10 @@ public class AndroidJsBridge {
      */
     public void jsResult(String code, String result,String key) {
         if(ContextQueue.reqMap.size()>0){
-            String js = "javascript: JsApi.jsCallback('" + code + "','" + result + "','" + key + "')";
+            String js = "('" + code + "','" + result + "','" + key + "')";
             runJs(js);
         }else{
-            String js = "javascript: JsApi.jsCallback('0','0','0')";
+            String js = "('0','0','0')";
             runJs(js);
         }
     }

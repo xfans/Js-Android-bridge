@@ -1,4 +1,4 @@
-package com.example.xfans.jsbridge.sample;
+package com.xfans.jsbridge.sample;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,9 +7,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.xfans.jsbridge.R;
-import com.example.xfans.jsbridge.bridge.XfansWebView;
-import com.example.xfans.jsbridge.widget.XfansBaseActivity;
+import com.xfans.jsbridge.R;
+import com.xfans.jsbridge.bridge.XfansWebView;
+import com.xfans.jsbridge.widget.XfansBaseActivity;
 
 
 public class MainActivity extends XfansBaseActivity {
@@ -22,10 +22,13 @@ public class MainActivity extends XfansBaseActivity {
         webView = (XfansWebView) findViewById(R.id.webView);
         button = (Button) findViewById(R.id.btn);
         setWebView(webView);
-        button.setOnClickListener(v -> {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 Intent intent = new Intent();
-                intent.setClassName(MainActivity.this,"com.example.xfans.js.sample.TestActivity");
+                intent.setClassName(MainActivity.this,"com.xfans.js.sample.TestActivity");
                 MainActivity.this.startActivity(intent);
+            }
         });
         webView.loadUrl("file:///android_asset/index.html");
     }

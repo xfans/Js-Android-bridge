@@ -1,4 +1,4 @@
-package com.example.xfans.jsbridge;
+package com.xfans.jsbridge;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

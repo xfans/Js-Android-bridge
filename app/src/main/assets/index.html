@@ -8,16 +8,16 @@
     }
     function showPic(path){
         var doc = document.getElementById("cont");
-        doc.innerHTML = str;
+        doc.innerHTML = path;
     }
     function callbackSync(){
         var result = JsApi.callAndroidSync("alert", "hello");
         show('hello:'+result);
     }
     function callbackAsync(){
-        var success = function( result) {
-            str = "<img id='img' src='"+result+"'>";
-            showPic(str);
+        var success = function(result) {
+            //str = "<img id='img' src='"+result+"'>";
+            show(result);
         };
         var fail = function( result) {
             show('fail:'+result);
@@ -35,7 +35,7 @@
 
 <img id="img" src="pic.jpg">
 <a href="tel:10010">tel:10010</a><br>
-<a href="gonative:com.example.xfans.jsbridge.sample.TestActivity">gonative</a><br>
+<a href="gonative:com.xfans.jsbridge.sample.TestActivity">gonative</a><br>
 
 </body>
 </html>

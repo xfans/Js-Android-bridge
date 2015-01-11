@@ -1,8 +1,8 @@
-package com.example.xfans.jsbridge.bridge;
+package com.xfans.jsbridge.bridge;
 
 import android.util.Log;
 
-import com.example.xfans.jsbridge.api.CMD;
+import com.xfans.jsbridge.api.CMD;
 
 /**
  * Created by xfans on 2014/12/13.

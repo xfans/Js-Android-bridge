@@ -22,13 +22,10 @@ public class MainActivity extends XfansBaseActivity {
         webView = (XfansWebView) findViewById(R.id.webView);
         button = (Button) findViewById(R.id.btn);
         setWebView(webView);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        button.setOnClickListener(v -> {
                 Intent intent = new Intent();
                 intent.setClassName(MainActivity.this,"com.example.xfans.js.sample.TestActivity");
                 MainActivity.this.startActivity(intent);
-            }
         });
         webView.loadUrl("file:///android_asset/index.html");
     }

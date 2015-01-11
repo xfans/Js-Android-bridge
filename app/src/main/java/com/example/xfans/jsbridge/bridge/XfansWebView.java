@@ -1,12 +1,14 @@
 package com.example.xfans.jsbridge.bridge;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
+import android.os.Build;
 import android.os.Message;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.webkit.ValueCallback;
 import android.webkit.WebView;
-
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
@@ -70,6 +72,16 @@ public class XfansWebView extends WebView {
     }
 
     /**
+     * 默认加载js方式
+     * @param url
+     */
+    @Override
+    public void loadUrl(String url) {
+        Log.d("XfansWebView","url");
+        super.loadUrl(url);
+    }
+
+    /**
      * 反射方式加载js
      * @param jsStr
      */
@@ -92,6 +104,7 @@ public class XfansWebView extends WebView {
      * 4.4新方法
      * @param jsStr
      */
+    @TargetApi(Build.VERSION_CODES.KITKAT)
     public void evaJsForKitkat(String jsStr) {
         evaluateJavascript(jsStr,new ValueCallback<String>() {
             @Override

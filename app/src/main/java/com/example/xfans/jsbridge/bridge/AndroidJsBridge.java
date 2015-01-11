@@ -72,7 +72,7 @@ public class AndroidJsBridge {
             webView.loadUrl("javascript: JsApi.jsCallback"+jsStr);
         } else if(Build.VERSION.SDK_INT<Build.VERSION_CODES.KITKAT){
             webView.loadUrlReflection("javascript: JsApi.jsCallback"+jsStr);
-        }else{//4.4兼用
+        }else{//兼容4.4
             webView.evaJsForKitkat("JsApi.jsCallback"+jsStr);
         }
     }

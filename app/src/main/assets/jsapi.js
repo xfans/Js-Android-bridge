@@ -14,7 +14,6 @@ var JsApi = {
     },
     jsCallback : function (code,result, key) {
         if(code = 1){ //1 seccuss
-            console.debug('jsCallback');
             setTimeout( "JsApi.callback_success['" +key+"']('" + result + "')", 0);
         }else{
             setTimeout( "JsApi.callback_fail['" +key+"']('" + result + "')", 0);

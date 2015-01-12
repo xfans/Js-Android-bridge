@@ -5,11 +5,12 @@ var JsApi = {
         return prompt(cmd,args);
     },
     callAndroidAsync : function (cmd, args, success, fail) {//异步调用 addJavascriptInterface方式
-        var key = new String(new Date().getTime()).substring(4,13)
+        var strKey = new String(new Date().getTime()).substring(5,13);
+        key = '5'+strKey;//防止第一位为0
         JsApi.callback_success[key] = success;
         JsApi.callback_fail[key] = fail;
         var doc = document.getElementById("cont");
-                doc.innerHTML = key;
+        doc.innerHTML = key;
         AndroidJsBridge.callNative(cmd,args,key)
     },
     jsCallback : function (code,result, key) {

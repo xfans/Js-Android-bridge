@@ -3,6 +3,7 @@ package com.xfans.jsbridge.bridge;
 import android.app.Activity;
 import android.os.Build;
 import android.util.Log;
+import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 
 import com.xfans.jsbridge.api.AndroidApi;
@@ -23,7 +24,7 @@ public class AndroidJsBridge {
         this.webView = webView;
         this.androidApi = androidApi;
     }
-
+    @JavascriptInterface
     public void callNative( String cmd, String agrs, String key){
         Log.d("AndroidJsBridge", cmd + ":" + agrs + ":" + key);
         RequestContent requestContent = new RequestContent(cmd, agrs, key, webView);
